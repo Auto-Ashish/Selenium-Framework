@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50362" started-at="2023-01-01T17:02:53 IST" finished-at="2023-01-01T17:03:43 IST">
+    <groups>
+      <group name="Smoke">
+        <method signature="SuiteOne.test1()[pri:0, instance:tests.SuiteOne@64485a47]" name="test1" class="tests.SuiteOne"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Test" duration-ms="50362" started-at="2023-01-01T17:02:53 IST" finished-at="2023-01-01T17:03:43 IST">
+      <class name="tests.SuiteOne">
+        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteOne@64485a47]" name="createBrowserInstance" is-config="true" duration-ms="48733" started-at="2023-01-01T17:02:53 IST" finished-at="2023-01-01T17:03:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBrowserInstance -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.SuiteOne@64485a47]" name="test1" duration-ms="4" started-at="2023-01-01T17:03:42 IST" finished-at="2023-01-01T17:03:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteOne@64485a47]" name="closeBrowserInstance" is-config="true" duration-ms="1559" started-at="2023-01-01T17:03:42 IST" finished-at="2023-01-01T17:03:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserInstance -->
+      </class> <!-- tests.SuiteOne -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
