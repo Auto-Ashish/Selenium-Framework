@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -12,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -30,6 +32,7 @@ public class BaseClass {
 	String reportPath = new File("").getAbsolutePath().toString().trim() + "/Reports/";
 
 	@BeforeTest
+	//@BeforeClass
 	public void createBrowserInstance() {
 		configProperties = loadConfiguration();
 
@@ -39,6 +42,9 @@ public class BaseClass {
 		createDriverInstance(browserName);
 
 		driver.get(configProperties.getProperty("driver.baseUrl"));
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 	}
 
@@ -133,13 +139,15 @@ public class BaseClass {
 	public void attachScreenshotToReport(boolean status, String imgPath, String logMessage) throws Exception {
 		takeSnapShot(driver, imgPath);
 		if (status) {
-			test.log(LogStatus.PASS, logMessage, "Test Verification passed");
+			String details = test.addScreenCapture(imgPath);
+			test.log(LogStatus.PASS, logMessage, details);
 			test.addScreenCapture(imgPath);
 		}
 
 		else {
-			test.log(LogStatus.FAIL, logMessage, "Test Verification failed");
-			test.addScreenCapture(imgPath);
+			String details = test.addScreenCapture(imgPath);
+			test.log(LogStatus.FAIL, logMessage, details);
+
 		}
 	}
 

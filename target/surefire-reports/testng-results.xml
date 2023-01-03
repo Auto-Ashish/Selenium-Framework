@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="7168" started-at="2023-01-01T17:44:47 IST" finished-at="2023-01-01T17:44:54 IST">
+  <suite name="Suite" duration-ms="76620" started-at="2023-01-03T20:36:24 IST" finished-at="2023-01-03T20:37:40 IST">
     <groups>
       <group name="Smoke">
         <method signature="SuiteOne.test1()[pri:0, instance:tests.SuiteOne@587d1d39]" name="test1" class="tests.SuiteOne"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="7168" started-at="2023-01-01T17:44:47 IST" finished-at="2023-01-01T17:44:54 IST">
+    <test name="Test" duration-ms="76620" started-at="2023-01-03T20:36:24 IST" finished-at="2023-01-03T20:37:40 IST">
       <class name="tests.SuiteOne">
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteOne@587d1d39]" name="createBrowserInstance" is-config="true" duration-ms="5048" started-at="2023-01-01T17:44:47 IST" finished-at="2023-01-01T17:44:52 IST">
+        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteOne@587d1d39]" name="createBrowserInstance" is-config="true" duration-ms="69209" started-at="2023-01-03T20:36:24 IST" finished-at="2023-01-03T20:37:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.SuiteOne@587d1d39]" name="test1" duration-ms="623" started-at="2023-01-01T17:44:52 IST" finished-at="2023-01-01T17:44:53 IST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.SuiteOne@587d1d39]" name="test1" duration-ms="5909" started-at="2023-01-03T20:37:33 IST" finished-at="2023-01-03T20:37:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteOne@587d1d39]" name="closeBrowserInstance" is-config="true" duration-ms="1460" started-at="2023-01-01T17:44:53 IST" finished-at="2023-01-01T17:44:54 IST">
+        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteOne@587d1d39]" name="closeBrowserInstance" is-config="true" duration-ms="1454" started-at="2023-01-03T20:37:39 IST" finished-at="2023-01-03T20:37:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserInstance -->
