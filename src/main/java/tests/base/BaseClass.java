@@ -25,7 +25,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 	Properties configProperties = null;
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	public ExtentReports report;
 	public ExtentTest test;
@@ -74,8 +74,7 @@ public class BaseClass {
 		String configurationFileName = System.getProperty("executionProfile", "") + ".properties";
 		Properties prop = null;
 		try {
-			prop = readPropertiesFile(
-					System.getProperty("user.dir") + "\\src\\main\\resources\\configuration\\" + configurationFileName);
+			prop = readPropertiesFile(System.getProperty("user.dir") + "\\src\\main\\resources\\configuration\\" + configurationFileName);
 		} catch (IOException e) {
 			System.out.println("Error while reading file ");
 			e.printStackTrace();

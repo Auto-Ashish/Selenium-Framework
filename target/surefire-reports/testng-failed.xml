@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.SuiteOne">
         <methods>
-          <include name="test1"/>
+          <include name="countAllElementsFromProductListingPage"/>
           <include name="closeBrowserInstance"/>
           <include name="createBrowserInstance"/>
         </methods>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="76620" started-at="2023-01-03T20:36:24 IST" finished-at="2023-01-03T20:37:40 IST">
+  <suite name="Suite" duration-ms="42035" started-at="2023-01-06T15:35:02 IST" finished-at="2023-01-06T15:35:44 IST">
     <groups>
       <group name="Smoke">
-        <method signature="SuiteOne.test1()[pri:0, instance:tests.SuiteOne@587d1d39]" name="test1" class="tests.SuiteOne"/>
+        <method signature="SuiteOne.countAllElementsFromProductListingPage()[pri:0, instance:tests.SuiteOne@687080dc]" name="countAllElementsFromProductListingPage" class="tests.SuiteOne"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="76620" started-at="2023-01-03T20:36:24 IST" finished-at="2023-01-03T20:37:40 IST">
+    <test name="Test" duration-ms="42035" started-at="2023-01-06T15:35:02 IST" finished-at="2023-01-06T15:35:44 IST">
       <class name="tests.SuiteOne">
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteOne@587d1d39]" name="createBrowserInstance" is-config="true" duration-ms="69209" started-at="2023-01-03T20:36:24 IST" finished-at="2023-01-03T20:37:33 IST">
+        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteOne@687080dc]" name="createBrowserInstance" is-config="true" duration-ms="12837" started-at="2023-01-06T15:35:02 IST" finished-at="2023-01-06T15:35:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.SuiteOne@587d1d39]" name="test1" duration-ms="5909" started-at="2023-01-03T20:37:33 IST" finished-at="2023-01-03T20:37:39 IST">
+        <test-method status="PASS" signature="countAllElementsFromProductListingPage()[pri:0, instance:tests.SuiteOne@687080dc]" name="countAllElementsFromProductListingPage" duration-ms="27520" started-at="2023-01-06T15:35:15 IST" finished-at="2023-01-06T15:35:43 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteOne@587d1d39]" name="closeBrowserInstance" is-config="true" duration-ms="1454" started-at="2023-01-03T20:37:39 IST" finished-at="2023-01-03T20:37:40 IST">
+        </test-method> <!-- countAllElementsFromProductListingPage -->
+        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteOne@687080dc]" name="closeBrowserInstance" is-config="true" duration-ms="1640" started-at="2023-01-06T15:35:43 IST" finished-at="2023-01-06T15:35:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserInstance -->
