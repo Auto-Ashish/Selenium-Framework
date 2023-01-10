@@ -32,8 +32,8 @@ public class BaseClass {
 	public ExtentTest test;
 	String reportPath = new File("").getAbsolutePath().toString().trim() + "/Reports/";
 
+	
 	@BeforeTest
-	//@BeforeClass
 	public void createBrowserInstance() {
 		configProperties = loadConfiguration();
 

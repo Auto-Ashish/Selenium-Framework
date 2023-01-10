@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class HomePage {
 	
@@ -33,6 +34,12 @@ public class HomePage {
 		return lbl_DealOfTheDay;
 	}	
 	
+	
+	//common methods 
+	public void verifyObjectsOnThisPage() {
+		Assert.assertTrue(getLbl_DealOfTheDay().isDisplayed());
+		Assert.assertTrue(getTxtbx_Search().isDisplayed());
+	}
 	
 	
 }

@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="86136" started-at="2023-01-06T21:45:28 IST" finished-at="2023-01-06T21:46:54 IST">
+  <suite name="Suite" duration-ms="8037" started-at="2023-01-10T18:16:23 IST" finished-at="2023-01-10T18:16:31 IST">
     <groups>
-      <group name="Smoke">
-        <method signature="SuiteTwo.checkBoxDemo()[pri:0, instance:tests.SuiteTwo@687080dc]" name="checkBoxDemo" class="tests.SuiteTwo"/>
-      </group> <!-- Smoke -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunnerTest@4d3167f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="86136" started-at="2023-01-06T21:45:28 IST" finished-at="2023-01-06T21:46:54 IST">
-      <class name="tests.SuiteTwo">
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@687080dc]" name="createBrowserInstance" is-config="true" duration-ms="18283" started-at="2023-01-06T21:45:28 IST" finished-at="2023-01-06T21:45:46 IST">
+    <test name="Test" duration-ms="8037" started-at="2023-01-10T18:16:23 IST" finished-at="2023-01-10T18:16:31 IST">
+      <class name="runner.CucumberRunnerTest">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberRunnerTest@4d3167f4]" name="setUpClass" is-config="true" duration-ms="984" started-at="2023-01-10T18:16:23 IST" finished-at="2023-01-10T18:16:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1cf0cacc]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo()[pri:0, instance:tests.SuiteTwo@687080dc]" name="checkBoxDemo" duration-ms="65467" started-at="2023-01-06T21:45:46 IST" finished-at="2023-01-06T21:46:52 IST">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunnerTest@4d3167f4]" name="runScenario" duration-ms="6943" started-at="2023-01-10T18:16:24 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-10T18:16:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to HRM Application"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:tests.SuiteTwo@687080dc]" name="test2" duration-ms="0" started-at="2023-01-06T21:46:52 IST" finished-at="2023-01-06T21:46:52 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.CucumberRunnerTest@4d3167f4]" name="tearDownClass" is-config="true" duration-ms="79" started-at="2023-01-10T18:16:31 IST" finished-at="2023-01-10T18:16:31 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:tests.SuiteTwo@687080dc]" name="test3" duration-ms="0" started-at="2023-01-06T21:46:52 IST" finished-at="2023-01-06T21:46:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@687080dc]" name="closeBrowserInstance" is-config="true" duration-ms="2332" started-at="2023-01-06T21:46:52 IST" finished-at="2023-01-06T21:46:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserInstance -->
-      </class> <!-- tests.SuiteTwo -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.CucumberRunnerTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
