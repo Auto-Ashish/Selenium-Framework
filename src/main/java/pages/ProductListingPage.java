@@ -41,6 +41,22 @@ public class ProductListingPage {
 		return BaseClass.driver.findElement(By.xpath("//a[text()='"+buttonText+"']"));
 	}
 	
+	@FindBy(xpath = "//*[text()='Men']/input")
+	private WebElement radioMen;
 	
+	public WebElement radioMen() {
+		return radioMen;
+	}
+	
+	
+//	@FindBy(xpath = "//input[@value='Frames']")
+	
+	
+	
+	private WebElement checkFrames;
+	
+	public WebElement checkFrames() {
+		return checkFrames;
+	}
 	
 }

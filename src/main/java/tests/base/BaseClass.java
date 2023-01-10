@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -43,7 +44,7 @@ public class BaseClass {
 
 		driver.get(configProperties.getProperty("driver.baseUrl"));
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 	}
