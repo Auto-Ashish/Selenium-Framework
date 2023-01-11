@@ -59,4 +59,14 @@ public class ProductListingPage {
 		return checkFrames;
 	}
 	
+	
+	
+	public WebElement selectProductWithPricenSize(String price, String size) {
+		String xpath= String.format("(//span[contains(.,'%s')]/ancestor::div[@class='product-price']/preceding-sibling::h4[@class='product-sizes']/span[text()='%s']//ancestor::li[@class='product-base'])[1]", price,size);
+	
+		return BaseClass.driver.findElement(By.xpath(xpath));
+	
+	}
+	
+	
 }

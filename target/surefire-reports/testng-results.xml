@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="86136" started-at="2023-01-06T21:45:28 IST" finished-at="2023-01-06T21:46:54 IST">
+  <suite name="Suite" duration-ms="161435" started-at="2023-01-11T20:11:31 IST" finished-at="2023-01-11T20:14:13 IST">
     <groups>
       <group name="Smoke">
         <method signature="SuiteTwo.checkBoxDemo()[pri:0, instance:tests.SuiteTwo@687080dc]" name="checkBoxDemo" class="tests.SuiteTwo"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="86136" started-at="2023-01-06T21:45:28 IST" finished-at="2023-01-06T21:46:54 IST">
+    <test name="Test" duration-ms="161435" started-at="2023-01-11T20:11:31 IST" finished-at="2023-01-11T20:14:13 IST">
       <class name="tests.SuiteTwo">
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@687080dc]" name="createBrowserInstance" is-config="true" duration-ms="18283" started-at="2023-01-06T21:45:28 IST" finished-at="2023-01-06T21:45:46 IST">
+        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@687080dc]" name="createBrowserInstance" is-config="true" duration-ms="11214" started-at="2023-01-11T20:11:31 IST" finished-at="2023-01-11T20:11:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo()[pri:0, instance:tests.SuiteTwo@687080dc]" name="checkBoxDemo" duration-ms="65467" started-at="2023-01-06T21:45:46 IST" finished-at="2023-01-06T21:46:52 IST">
+        <test-method status="PASS" signature="checkBoxDemo()[pri:0, instance:tests.SuiteTwo@687080dc]" name="checkBoxDemo" duration-ms="148378" started-at="2023-01-11T20:11:42 IST" finished-at="2023-01-11T20:14:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:tests.SuiteTwo@687080dc]" name="test2" duration-ms="0" started-at="2023-01-06T21:46:52 IST" finished-at="2023-01-06T21:46:52 IST">
+        <test-method status="PASS" signature="test2()[pri:0, instance:tests.SuiteTwo@687080dc]" name="test2" duration-ms="1" started-at="2023-01-11T20:14:11 IST" finished-at="2023-01-11T20:14:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:tests.SuiteTwo@687080dc]" name="test3" duration-ms="0" started-at="2023-01-06T21:46:52 IST" finished-at="2023-01-06T21:46:52 IST">
+        <test-method status="PASS" signature="test3()[pri:0, instance:tests.SuiteTwo@687080dc]" name="test3" duration-ms="0" started-at="2023-01-11T20:14:11 IST" finished-at="2023-01-11T20:14:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@687080dc]" name="closeBrowserInstance" is-config="true" duration-ms="2332" started-at="2023-01-06T21:46:52 IST" finished-at="2023-01-06T21:46:54 IST">
+        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@687080dc]" name="closeBrowserInstance" is-config="true" duration-ms="1806" started-at="2023-01-11T20:14:11 IST" finished-at="2023-01-11T20:14:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserInstance -->

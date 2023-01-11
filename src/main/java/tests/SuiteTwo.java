@@ -1,5 +1,8 @@
 package tests;
 import java.time.Duration;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 
@@ -33,7 +36,7 @@ public class SuiteTwo extends BaseClass {
 
 			Assert.assertTrue(homePageObj.getLbl_DealOfTheDay().isDisplayed());
 			Assert.assertTrue(homePageObj.getTxtbx_Search().isDisplayed());
-
+			System.out.println("Entered 'Computer' keyword in search box.");
 			homePageObj.getTxtbx_Search().sendKeys("Computer");
 			attachScreenshotToReport(true, "/img2.png", "Validate title matched for the web page");
 			homePageObj.getTxtbx_Search().sendKeys(Keys.ENTER);
@@ -48,6 +51,7 @@ public class SuiteTwo extends BaseClass {
 
 			
 			//
+			System.out.println("Switching all pages. ");
 			int count = productListingPageObj.getProducts().size();
 			try {
 				
@@ -66,22 +70,54 @@ public class SuiteTwo extends BaseClass {
 				System.out.println("On last page");
 				attachScreenshotToReport(true, "/img5.png", "Total Elements in inventory :  " + count);
 				
-				Thread.sleep(15000);
+				Thread.sleep(5000);
 				//productListingPageObj.radioMen().click();
 				//driver.findElement(By.xpath("//*[text()='Men']/input")).click();
-				
+				System.out.println("Select 'Men' category using radio button.");
 				WebElement element = driver.findElement(By.xpath("//*[text()='Men']/input/parent::*/*[2]"));
 				
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();", element);
 				
 				driver.navigate().refresh();
-				attachScreenshotToReport(true, "/img61.png", "Verify CheckBox is selected.  " );
+				attachScreenshotToReport(true, "/img61.png", "Verify 'Men' is selected.  " );
 				
-			}
 			
-
+			}
+			//Without hard coding xpath by calling xpath through method 
+			
+			System.out.println("Window Feature Started.");
+		 ProductListingPage produListingPageObj = new ProductListingPage(driver);
+		 productListingPageObj.selectProductWithPricenSize("Rs. 689", "M").click();
 		
+		 
+		 Thread.sleep(5000);
+		 // Window handle code later to be moved in generic method
+		 
+		 String parentWindowHandle = driver.getWindowHandle();
+		 
+		 Set<String> allWindowHandles = (Set<String>) driver.getWindowHandles();
+		 
+		 Iterator<String> it = allWindowHandles.iterator();
+		 
+		 while (it.hasNext()) {
+			
+			 String childWindow = it.next();
+			 
+			 if(!childWindow.equalsIgnoreCase(parentWindowHandle)) {
+				 
+				 driver.switchTo().window(childWindow);
+				 
+				 System.out.println("Current child window has Window title :"+driver.getTitle() );
+				 attachScreenshotToReport(true, "/img65.png", "Verify Item is selected.  " );;
+				 Thread.sleep(2000);
+				 driver.close();
+			 }
+			
+		}
+		 driver.switchTo().window(parentWindowHandle);
+		 attachScreenshotToReport(true, "/img67.png","Switched back to Parent window.");
+		 
 	}
 	
 	@Test
