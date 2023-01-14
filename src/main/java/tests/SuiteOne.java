@@ -13,7 +13,7 @@ import tests.base.BaseClass;
 
 public class SuiteOne extends BaseClass {
 
-	@Test(groups = "Smoke", enabled = false)
+	@Test(groups = "Smoke", enabled = true)
 	public void test1() throws Exception {
 		System.out.println("In test method");
 		if (driver.getCurrentUrl().contains("myntra"))
@@ -32,7 +32,7 @@ public class SuiteOne extends BaseClass {
 
 	}
 
-	@Test(groups = "Smoke", enabled = false)
+	@Test(groups = "Smoke", enabled = true)
 	public void verifyProductCountFromProductListingPage() throws Exception {
 		System.out.println("In test method");
 		if (driver.getCurrentUrl().contains("myntra"))

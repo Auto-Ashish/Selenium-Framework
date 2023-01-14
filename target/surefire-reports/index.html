@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SuiteTwo" hash-for-method="checkBoxDemo">checkBoxDemo</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SuiteTwo" hash-for-method="checkBoxDemo(Rs. 899, S)">checkBoxDemo(Rs. 899, S)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SuiteTwo" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SuiteTwo" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="tests.SuiteTwo" hash-for-method="checkBoxDemo(Rs. 899, S)">checkBoxDemo(Rs. 899, S)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -137,23 +132,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkBoxDemo">
-                  </a> <!-- checkBoxDemo -->
+                  <a name="checkBoxDemo(Rs. 899, S)">
+                  </a> <!-- checkBoxDemo(Rs. 899, S) -->
                   <span class="method-name">checkBoxDemo</span>
+                  <span class="parameters">(Rs. 899, S)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test2">
-                  </a> <!-- test2 -->
-                  <span class="method-name">test2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test3">
-                  </a> <!-- test3 -->
-                  <span class="method-name">test3</span>
+                  <a name="checkBoxDemo(Rs. 899, S)">
+                  </a> <!-- checkBoxDemo(Rs. 899, S) -->
+                  <span class="method-name">checkBoxDemo</span>
+                  <span class="parameters">(Rs. 899, S)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,24 +208,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkBoxDemo')
 data.setCell(0, 2, 'tests.SuiteTwo')
-data.setCell(0, 3, 148378);
+data.setCell(0, 3, 48061);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test2')
+data.setCell(1, 1, 'checkBoxDemo')
 data.setCell(1, 2, 'tests.SuiteTwo')
-data.setCell(1, 3, 1);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test3')
-data.setCell(2, 2, 'tests.SuiteTwo')
-data.setCell(2, 3, 0);
+data.setCell(1, 3, 44747);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,9 +236,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.SuiteTwo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test2</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -262,26 +255,30 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SuiteTwo</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-method before">
                 <span class="method-name">createBrowserInstance</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">checkBoxDemo</span>
-                <span class="method-start">11242 ms</span>
+                <span class="method-name">checkBoxDemo(Rs. 899, S)</span>
+                <span class="method-start">7612 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test2</span>
-                <span class="method-start">159623 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test3</span>
-                <span class="method-start">159624 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">closeBrowserInstance</span>
-                <span class="method-start">159626 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">55677 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">createBrowserInstance</span>
+                <span class="method-start">57165 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkBoxDemo(Rs. 899, S)</span>
+                <span class="method-start">62030 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowserInstance</span>
+                <span class="method-start">106778 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

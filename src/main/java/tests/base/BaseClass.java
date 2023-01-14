@@ -13,8 +13,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -28,16 +30,16 @@ public class BaseClass {
 	Properties configProperties = null;
 	public static WebDriver driver;
 
-	public ExtentReports report;
-	public ExtentTest test;
-	String reportPath = new File("").getAbsolutePath().toString().trim() + "/Reports/";
+	public static ExtentReports report;
+	public static ExtentTest test;
+	static String reportPath = new File("").getAbsolutePath().toString().trim() + "/Reports/";
 
-	@BeforeTest
+	@BeforeMethod
 	//@BeforeClass
 	public void createBrowserInstance() {
 		configProperties = loadConfiguration();
 
-		startExtentReporting();
+		startExtentReporting(this.getClass().getSimpleName());
 
 		String browserName = configProperties.getProperty("browserType");
 		createDriverInstance(browserName);
@@ -48,8 +50,9 @@ public class BaseClass {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(1));
 
 	}
+	
 
-	@AfterTest
+	@AfterMethod
 	public void closeBrowserInstance() {
 		// driver.close();
 		closeReporting();
@@ -104,9 +107,9 @@ public class BaseClass {
 		return prop;
 	}
 
-	public void startExtentReporting() {
+	public static void startExtentReporting(String name) {
 		// ***********Extent Report Implementation***********
-		report = new ExtentReports(reportPath + this.getClass().getSimpleName() + ".html", false);
+		report = new ExtentReports(reportPath + name + ".html", false);
 
 		// Starting the test case for reporting
 		test = report.startTest("Extent Report Example Project");
@@ -114,14 +117,14 @@ public class BaseClass {
 		// ***********Extent Report Implementation***********
 	}
 
-	public void closeReporting() {
+	public static void closeReporting() {
 		// Closing the report
 		report.endTest(test);
 		report.flush();
 		report.close();
 	}
 
-	public void takeSnapShot(WebDriver webdriver, String fileWithPath) throws Exception {
+	public static void takeSnapShot(WebDriver webdriver, String fileWithPath) throws Exception {
 		// Convert web driver object to TakeScreenshot
 		TakesScreenshot scrShot = ((TakesScreenshot) webdriver);
 
@@ -136,17 +139,17 @@ public class BaseClass {
 
 	}
 
-	public void attachScreenshotToReport(boolean status, String imgPath, String logMessage) throws Exception {
+	public static void attachScreenshotToReport(boolean status, String imgPath, String logMessage) throws Exception {
 		takeSnapShot(driver, imgPath);
 		if (status) {
 			String details = test.addScreenCapture(imgPath);
-			test.log(LogStatus.PASS, logMessage, details);
+			test.log(LogStatus.PASS, "Verification : PASSED " +logMessage, details);
 			test.addScreenCapture(imgPath);
 		}
 
 		else {
 			String details = test.addScreenCapture(imgPath);
-			test.log(LogStatus.FAIL, logMessage, details);
+			test.log(LogStatus.FAIL, "Verification : FAILED " +logMessage, details);
 
 		}
 	}

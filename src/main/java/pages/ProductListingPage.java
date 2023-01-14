@@ -5,14 +5,17 @@ import java.util.List;
 import javax.xml.xpath.XPath;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import tests.base.BaseClass;
+import utilities.JavaScriptExecutorHelperMethods;
 
 public class ProductListingPage {
 	
@@ -66,6 +69,48 @@ public class ProductListingPage {
 	
 		return BaseClass.driver.findElement(By.xpath(xpath));
 	
+	}
+
+
+	public void verifyProductListedAndNavigateThroughIt() throws Exception {
+		Assert.assertEquals(getProducts().size() > 0, true);
+		
+		BaseClass.attachScreenshotToReport(true, "/img3.png", "Validate size is greater than zero, Size is:  " + getProducts().size());		
+		System.out.println("Navigation through prodult list");
+		
+		int count = getProducts().size();
+		
+		try {
+			
+			while(getNextbtn().isDisplayed()) {
+				if(getNextbtn().isDisplayed()){
+					getNextbtn().click();
+					Thread.sleep(5000);
+					count = count + getProducts().size();
+				}
+				else
+					break;
+			}
+			
+			BaseClass.attachScreenshotToReport(true, "/img4.png", "Total Elements in inventory :  " + count);
+			
+		}	catch (NoSuchElementException e) {
+			System.out.println("On last page");
+			BaseClass.attachScreenshotToReport(true, "/img5.png", "Total Elements in inventory :  " + count);	
+			Thread.sleep(5000);	
+			System.out.println("Select 'Men' category using radio button.");
+		
+			WebElement element = BaseClass.driver.findElement(By.xpath("//*[text()='Men']/input/parent::*/*[2]"));
+			
+			JavaScriptExecutorHelperMethods.clickUsignJS(element);
+			
+			BaseClass.driver.navigate().refresh();
+			
+			BaseClass.attachScreenshotToReport(true, "/img61.png", "Verify 'Men' is selected.  " );
+			
+		
+		}
+		
 	}
 	
 	

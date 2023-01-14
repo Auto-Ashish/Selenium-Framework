@@ -7,7 +7,7 @@
         <methods>
           <include name="closeBrowserInstance"/>
           <include name="createBrowserInstance"/>
-          <include name="checkBoxDemo"/>
+          <include name="checkBoxDemo" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- tests.SuiteTwo -->
     </classes>
