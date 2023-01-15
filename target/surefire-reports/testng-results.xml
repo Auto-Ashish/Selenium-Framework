@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="337560" started-at="2023-01-15T17:46:25 IST" finished-at="2023-01-15T17:52:02 IST">
+  <suite name="Suite" duration-ms="150984" started-at="2023-01-15T18:58:40 IST" finished-at="2023-01-15T19:01:11 IST">
     <groups>
       <group name="Smoke">
         <method signature="SuiteTwo.checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" class="tests.SuiteTwo"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Test" duration-ms="337560" started-at="2023-01-15T17:46:25 IST" finished-at="2023-01-15T17:52:02 IST">
+    <test name="Test" duration-ms="150984" started-at="2023-01-15T18:58:40 IST" finished-at="2023-01-15T19:01:11 IST">
       <class name="tests.SuiteTwo">
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="7523" started-at="2023-01-15T17:46:25 IST" finished-at="2023-01-15T17:46:33 IST">
+        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="7500" started-at="2023-01-15T18:58:40 IST" finished-at="2023-01-15T18:58:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="46637" started-at="2023-01-15T17:46:33 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T17:47:20 IST">
+        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="47215" started-at="2023-01-15T18:58:48 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T18:59:35 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Price=Rs. 899, SearchText=Computer, Size=S}]]>
+                <![CDATA[{Price=Rs. 389, SearchText=Computer, Size=S}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="1478" started-at="2023-01-15T17:47:20 IST" finished-at="2023-01-15T17:47:21 IST">
+        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="1528" started-at="2023-01-15T18:59:35 IST" finished-at="2023-01-15T18:59:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserInstance -->
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="4998" started-at="2023-01-15T17:47:21 IST" finished-at="2023-01-15T17:47:26 IST">
+        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="4841" started-at="2023-01-15T18:59:37 IST" finished-at="2023-01-15T18:59:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="47787" started-at="2023-01-15T17:47:26 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T17:48:14 IST">
+        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="43310" started-at="2023-01-15T18:59:42 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T19:00:25 IST">
           <params>
             <param index="0">
               <value>
@@ -44,83 +44,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="1013" started-at="2023-01-15T17:48:14 IST" finished-at="2023-01-15T17:48:15 IST">
+        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="1020" started-at="2023-01-15T19:00:25 IST" finished-at="2023-01-15T19:00:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserInstance -->
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="8158" started-at="2023-01-15T17:48:15 IST" finished-at="2023-01-15T17:48:23 IST">
+        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="4358" started-at="2023-01-15T19:00:26 IST" finished-at="2023-01-15T19:00:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="48149" started-at="2023-01-15T17:48:23 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T17:49:11 IST">
+        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="39429" started-at="2023-01-15T19:00:30 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T19:01:10 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Price=Rs. 899, SearchText=Computer, Size=S}]]>
+                <![CDATA[{Price=Rs. 1390, SearchText=Muscle Torque Zip Sweatshirts, Size=M}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="975" started-at="2023-01-15T17:49:11 IST" finished-at="2023-01-15T17:49:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserInstance -->
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="5483" started-at="2023-01-15T17:49:12 IST" finished-at="2023-01-15T17:49:18 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="46675" started-at="2023-01-15T17:49:18 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T17:50:04 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Price=Rs. 899, SearchText=Computer, Size=S}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="913" started-at="2023-01-15T17:50:04 IST" finished-at="2023-01-15T17:50:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserInstance -->
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="5838" started-at="2023-01-15T17:50:05 IST" finished-at="2023-01-15T17:50:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="52278" started-at="2023-01-15T17:50:11 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T17:51:03 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Price=Rs. 899, SearchText=Computer, Size=S}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="936" started-at="2023-01-15T17:51:03 IST" finished-at="2023-01-15T17:51:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowserInstance -->
-        <test-method status="PASS" signature="createBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="createBrowserInstance" is-config="true" duration-ms="5309" started-at="2023-01-15T17:51:04 IST" finished-at="2023-01-15T17:51:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createBrowserInstance -->
-        <test-method status="PASS" signature="checkBoxDemo(java.util.HashMap)[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="checkBoxDemo" duration-ms="51253" started-at="2023-01-15T17:51:10 IST" data-provider="ExcelDataProvider" finished-at="2023-01-15T17:52:01 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Price=Rs. 899, SearchText=Computer, Size=S}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkBoxDemo -->
-        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="1519" started-at="2023-01-15T17:52:01 IST" finished-at="2023-01-15T17:52:02 IST">
+        <test-method status="PASS" signature="closeBrowserInstance()[pri:0, instance:tests.SuiteTwo@2353b3e6]" name="closeBrowserInstance" is-config="true" duration-ms="1005" started-at="2023-01-15T19:01:10 IST" finished-at="2023-01-15T19:01:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowserInstance -->

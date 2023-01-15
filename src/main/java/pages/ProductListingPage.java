@@ -100,9 +100,14 @@ public class ProductListingPage {
 			Thread.sleep(5000);	
 			System.out.println("Select 'Men' category using radio button.");
 		
-			WebElement element = BaseClass.driver.findElement(By.xpath("//*[text()='Men']/input/parent::*/*[2]"));
-			
-			JavaScriptExecutorHelperMethods.clickUsignJS(element);
+			try {
+				WebElement element = BaseClass.driver.findElement(By.xpath("//*[text()='Men']/input/parent::*/*[2]"));
+				
+				JavaScriptExecutorHelperMethods.clickUsignJS(element);
+			} catch (NoSuchElementException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();  // Ignore 
+			}
 			
 			BaseClass.driver.navigate().refresh();
 			

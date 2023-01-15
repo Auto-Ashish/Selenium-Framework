@@ -56,23 +56,27 @@ public class ExcelUtility {
 
 	private static List<Object> setTestData() {
 		List<Object> testData = new ArrayList<Object>();
+		
 		int totalTestDataRecords = sheet.getLastRowNum() - sheet.getFirstRowNum();
 		Map<String, String> dataRecord = new HashMap<String, String>();
 
 		for (int i = 1; i <= totalTestDataRecords; i++) {
 			int cellcount = sheet.getRow(i).getLastCellNum();
-			System.out.println("Row" + i + " data is :");
 
 			for (int j = 0; j < cellcount; j++) {
 
 				String key = returnCellData(sheet.getRow(0).getCell(j)).toString();
 				String value = returnCellData(sheet.getRow(i).getCell(j)).toString();
 				dataRecord.put(key, value);
+			
 			}
-			testData.add(dataRecord);
-
+			
+			System.out.println("Row" + i + " data is :" + dataRecord);
+			Boolean result=testData.add(new HashMap<>(dataRecord));
+		
+	
 		}
-
+		System.out.println("TestData"+testData);
 		return testData;
 	}
 
@@ -84,16 +88,5 @@ public class ExcelUtility {
 
 	}
 
-	/*
-	 * Object[][] data; HashMap<String, String> map = new HashMap<String, String>();
-	 * map.put("Price", "Rs. 899"); map.put("Size", "S");
-	 * 
-	 * HashMap<String, String> map2 = new HashMap<String, String>();
-	 * map2.put("Price", "Rs. 899"); map2.put("Size", "S");
-	 * 
-	 * List<Object> list=new ArrayList<Object>(); list.add(map); list.add(map2);
-	 * 
-	 * return new Object[][] { list.toArray() };
-	 */
-
+	
 }
