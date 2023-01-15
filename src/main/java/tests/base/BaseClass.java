@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -18,12 +19,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.ExcelUtility;
 
 public class BaseClass {
 
@@ -152,6 +155,14 @@ public class BaseClass {
 			test.log(LogStatus.FAIL, "Verification : FAILED " +logMessage, details);
 
 		}
+	}
+	
+	
+	@DataProvider(name = "ExcelDataProvider")
+	public Object[] dpMethod() throws IOException {
+		List<Object> list=ExcelUtility.createTestDataFromExecel("E:\\AutoMation\\eclipse-workspace\\0.1\\TestData\\TestData.xlsx","ABC");
+		return   list.toArray() ;
+
 	}
 
 }
