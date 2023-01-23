@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import tests.base.BaseClass;
 
-public class HomePage implements LocatorsXpathCss{
+public class HomePage  implements LocatorsXpathCss {
 	
 	public HomePage(WebDriver driver) {
 	    PageFactory.initElements(driver, this);

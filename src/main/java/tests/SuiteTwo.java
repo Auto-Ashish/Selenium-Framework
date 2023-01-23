@@ -60,7 +60,7 @@ public class SuiteTwo extends BaseClass {
 				driver.switchTo().window(childWindow);
 				System.out.println("Current child window has Window title :" + driver.getTitle());
 				attachScreenshotToReport(true, "/img65.png", "Verify Item is selected.  ");
-				;
+				
 				Thread.sleep(2000);
 				driver.close();
 			}
