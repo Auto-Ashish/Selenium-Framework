@@ -106,7 +106,7 @@ public class ProductListingPage {
 				JavaScriptExecutorHelperMethods.clickUsignJS(element);
 			} catch (NoSuchElementException e1) {
 				// TODO Auto-generated catch block
-				e1.printStackTrace();  // Ignore 
+				//e1.printStackTrace();  // Ignore 
 			}
 			
 			BaseClass.driver.navigate().refresh();

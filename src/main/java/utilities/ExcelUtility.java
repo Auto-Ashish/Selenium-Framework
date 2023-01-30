@@ -62,6 +62,7 @@ public class ExcelUtility {
 
 		for (int i = 1; i <= totalTestDataRecords; i++) {
 			int cellcount = sheet.getRow(i).getLastCellNum();
+
 			for (int j = 0; j < cellcount; j++) {
 
 				String key = returnCellData(sheet.getRow(0).getCell(j)).toString();
@@ -72,7 +73,9 @@ public class ExcelUtility {
 			
 			System.out.println("Row" + i + " data is :" + dataRecord);
 			Boolean result=testData.add(new HashMap<>(dataRecord));
-	}
+		
+	
+		}
 		System.out.println("TestData"+testData);
 		return testData;
 	}

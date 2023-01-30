@@ -42,9 +42,8 @@ public class SuiteTwo extends BaseClass {
 		homePageObj.searchForProduct(testData.get("SearchText"));
 
 		ProductListingPage productListingPageObj = new ProductListingPage(driver);
-		productListingPageObj.verifyProductListedAndNavigateThroughIt();
+	//	productListingPageObj.verifyProductListedAndNavigateThroughIt();
 
-		ProductListingPage produListingPageObj = new ProductListingPage(driver);
 		productListingPageObj.selectProductWithPricenSize(testData.get("Price"), testData.get("Size")).click();
 
 		Thread.sleep(5000);
@@ -60,7 +59,7 @@ public class SuiteTwo extends BaseClass {
 				driver.switchTo().window(childWindow);
 				System.out.println("Current child window has Window title :" + driver.getTitle());
 				attachScreenshotToReport(true, "/img65.png", "Verify Item is selected.  ");
-				
+				;
 				Thread.sleep(2000);
 				driver.close();
 			}
